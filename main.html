@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  CSS  --------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="style2.css">
+    <title>Weather Website</title>
+    <!---------------  IONICONS  --------------------->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+
+    <section class="linebg">
+        <div class="container">
+            <div class="search_box">
+                <input type="text" placeholder="Nhập vào địa điểm" id="city" value="Ho Chi Minh" autocomplete="off" />
+                <button id="search"><ion-icon class="icon" name="search"></ion-icon></button>
+            </div>
+            <div id="show">
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="">
+                <p class="text">Xin chào</p>
+                <p class="text">Thông tin thời tiết hôm nay</p>
+            </div>
+            <div class="logout"><a href="./index.html" class="log">Đăng xuất</a></div>
+            <div class="chart2">
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/1?bgcolor=%23E8eef3&color=%23Da2815&days=3&results=60&title=Nhi%E1%BB%87t+%C4%91%E1%BB%99&xaxis=Th%E1%BB%9Di+gian&yaxis=T"></iframe>
+                <iframe class="linegraph" src="https://thingspeak.com/channels/2370169/widgets/775626"></iframe>
+
+
+            </div>
+            <p class="text">Thông tin khác</p>
+            <div class="chart2">
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/4?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=%C4%90%E1%BB%99+%E1%BA%A9m+kh%C3%B4ng+kh%C3%AD&xaxis=Th%E1%BB%9Di+gian&yaxis=RH"></iframe>
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/6?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=Ch%E1%BB%89+s%E1%BB%91+l%C6%B0%E1%BB%A3ng+m%C6%B0a&xaxis=Th%E1%BB%9Di+gian&yaxis=RFI"></iframe>
+
+            </div>
+
+            <div class="chart2">
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/2?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=%C3%81p+su%E1%BA%A5t+kh%C3%B4ng+kh%C3%AD&xaxis=Th%E1%BB%9Di+gian&yaxis=PO"></iframe>
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/7?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=C%C6%B0%E1%BB%9Dng+%C4%91%E1%BB%99+%C3%A1nh+s%C3%A1ng&xaxis=Th%E1%BB%9Di+gian&yaxis=Lx"></iframe>
+            </div>
+            <div class="chart2">
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/3?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=%C4%90%E1%BB%99+cao+so+v%E1%BB%9Bi+m%E1%BB%B1c+n%C6%B0%E1%BB%9Bc+bi%E1%BB%83n&xaxis=Th%E1%BB%9Di+gian&yaxis=Alt"></iframe>
+                <iframe class="linegraph"
+                    src="https://thingspeak.com/channels/2370169/charts/5?bgcolor=%23E8eef3&color=%23Da2815&results=60&title=%C4%90i%E1%BB%83m+ng%C6%B0ng+s%C6%B0%C6%A1ng&xaxis=Th%E1%BB%9Di+gian&yaxis=DP"></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!---------------  SCRIPT  --------------------->
+    <script src="script.js"></script>
+</body>
+
+</html>
