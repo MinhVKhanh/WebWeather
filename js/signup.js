@@ -21,6 +21,6 @@ btnRegister.addEventListener("click", (e) => {
     let json = JSON.stringify(user);
     localStorage.setItem(inputUsernameRegister.value, json);
     alert("Đăng Ký Thành Công");
-    window.location.href = "main.html";
+    window.location.href = "login.html";
   }
 });
